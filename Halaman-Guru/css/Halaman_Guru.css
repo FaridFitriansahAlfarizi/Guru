@@ -1,0 +1,191 @@
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.navbar {
+    top: 0;
+    z-index: 997;
+    position: fixed;
+    width: 100%;
+    padding: 10px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+#sidebar1, #sidebar2 {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    z-index: 999;
+    background: #343a40;
+    color: #fff;
+    transition: all 0.3s;
+    overflow-y: scroll;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#sidebar1.active, #sidebar2.active {
+    left: 0;
+}
+
+.dismiss {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #343a40;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-top: 5px;
+}
+
+.dismiss:hover {
+    background: #212529;
+    border-radius: 10%;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+.sidebar-header {
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid;
+    background: #343a40;
+}
+
+#sidebar1 ul.components, #sidebar2 ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #fff;
+}
+
+#sidebar1 ul li a, #sidebar2 ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar1 ul li a:hover, #sidebar2 ul li a:hover {
+    color: #000;
+    background: #bbb;
+}
+
+ul.Edit {
+    padding: 20px;
+}
+
+ul.Edit a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a.download {
+    background: #fff;
+    color: #000;
+}
+#content {
+    margin-top: 60px;
+    width: 100%;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.navbar-brand {
+    margin-left: 10px;
+}
+#sidebarCollapse {
+    margin-left: 5px;
+}
+#sidebarCollapse-first {
+    margin-left: 450px;
+}
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 750px;
+}
+.buat {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width:800px;
+    height: auto;
+}
+.create {
+    border-radius: 25px;
+    width: 150px;
+    height: 50px;
+}
+.create:hover {
+    background-color: #212529;
+}
+.dropdown-menu {
+    width: 200px;
+    font-size: 13pt;
+}
+.dropdown-item:hover {
+    background-color: #ddd;
+}
+#upload {
+    margin-left: 1110px;
+}
+.isi {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+input {
+    margin-left: 20px;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+}
+#waktu {
+    width: 250px;
+    height: 50px;
+}
+#judul {
+    width: 1250px;
+    height: 50px;
+}
+#judul-{
+    margin-left: 24px;
+    width: 1250px;
+    height: 50px;
+}
+#petunjuk {
+    width: 1250px;
+    height: 100px;
+}
+#file {
+    margin-left: 50px;
+}

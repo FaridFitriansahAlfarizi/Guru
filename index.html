@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Halaman Guru</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="Halaman-Guru/css/Halaman_Guru.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="Halaman-Guru/js/Halaman_Guru.js"></script>
+</head>
+<body>
+	 <div id="content">
+
+        <nav id="sidebar1">
+            <div class="sidebar-header">
+                <div class="dismiss">
+                    <i class="fas fa-arrow-left"></i>
+                </div>
+                    <a class="navbar-brand">Materi</a>
+                <button type="button" id="upload" class="btn btn-dark">
+                    <i class="fas fa-arrow-up"></i>
+                    <span>Upload</span>
+                </button>
+            </div>
+
+            <div class="isi">
+            <form action="#" method="post" class="needs-validation" novalidate>
+                <div class="form-group">
+                    <label for="waktu"><i class="fas fa-calendar-check fa-2x" aria-hidden="true"></i></label>
+                    <input type="date" id="waktu" name="waktu" required>
+                </div>
+                <div class="form-group">
+                    <label for="judul"><i class="fas fa-book fa-2x"></i></label>
+                    <input type="text" id="judul" placeholder="Judul" name="judul" required>
+                </div>
+                <div class="form-group">
+                    <label for="petunjuk"><i class="fas fa-align-left fa-2x"></i></label>
+                    <input type="text" id="petunjuk" placeholder="Petunjuk (Opsional)" name="petunjuk" required>
+                </div>
+                <button type="button" id="file" class="btn btn-dark">
+                    <i class="fas fa-plus"></i>
+                    <span>Tambahkan File</span>
+                </button>
+            </form>
+            </div>
+        </nav>
+
+        <nav id="sidebar2">
+            <div class="sidebar-header">
+                <div class="dismiss">
+                    <i class="fas fa-arrow-left"></i>
+                </div>
+                    <a class="navbar-brand">Tugas</a>
+                <button type="button" id="upload" class="btn btn-dark">
+                    <i class="fas fa-arrow-up"></i>
+                    <span>Upload</span>
+                </button>
+            </div>
+
+            <div class="isi">
+            <form action="#" method="post" class="needs-validation" novalidate>
+                <div class="form-group">
+                    <label for="waktu"><i class="fas fa-calendar-check fa-2x" aria-hidden="true"></i></label>
+                    <input type="date" id="waktu" name="waktu" required>
+                </div>
+                <div class="form-group">
+                    <label for="judul"><i class="fas fa-file-alt fa-2x"></i></label>
+                    <input type="text" id="judul-" placeholder="Judul" name="judul" required>
+                </div>
+                <div class="form-group">
+                    <label for="petunjuk"><i class="fas fa-align-left fa-2x"></i></label>
+                    <input type="text" id="petunjuk" placeholder="Petunjuk (Opsional)" name="petunjuk" required>
+                </div>
+                <button type="button" id="file" class="btn btn-dark">
+                    <i class="fas fa-plus"></i>
+                    <span>Tambahkan File</span>
+                </button>
+            </form>
+            </div>
+        </nav>
+
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
+                    <a class="navbar-brand" href="#"><b>XI-RPL A</b></a>
+
+                    <button type="button" id="sidebarCollapse-first" class="btn btn-dark active">
+                        <span>Tugas kelas</span>
+                    </button>
+                    <button type="button" id="sidebarCollapse" class="btn btn-dark">
+                        <span>Anggota</span>
+                    </button>
+                    <button type="button" id="sidebarCollapse" class="btn btn-dark">
+                        <span>Nilai</span>
+                    </button>
+
+            </nav>
+
+            <div class="content">
+                <div class="buat">
+                    <button class="create btn btn-dark" data-toggle="dropdown">
+                        <i class="fas fa-plus"></i>
+                        <span>Buat</span>
+                    </button>
+
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item layer1" href="#"><i class="fas fa-book"></i> Materi</a>
+                      <a class="dropdown-item layer2" href="#"><i class="fas fa-file-alt"></i> Tugas</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
